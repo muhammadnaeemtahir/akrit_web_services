@@ -251,8 +251,8 @@ body {
 .splide__arrow--prev {
   left: -3em !important;
 }
-.technologies .splide__pagination{
-  margin: -2rem;
+.splide__pagination{
+  display: none !important;
 }
 /* testimonials: end */
 

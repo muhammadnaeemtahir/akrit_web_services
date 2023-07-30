@@ -23,11 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
       perMove: 1,
     };
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 950px)").matches) {
       splideOptions.perPage = 1;
       splideOptions.autoplay = true;
       splideOptions.arrows = false;
+      splideOptions.speed = 1000;
     } else {
+      splideOptions.autoplay = true;
+      splideOptions.speed = 1000;
       splideOptions.perPage = 3;
     }
 
@@ -48,11 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
       perMove: 1,
     };
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 950px)").matches) {
       splideOptions.perPage = 2;
       splideOptions.autoplay = true;
       splideOptions.arrows = false;
+      splideOptions.speed = 1000;
     } else {
+      splideOptions.speed = 1000;
       splideOptions.autoplay = true;
       splideOptions.perPage = 5;
     }

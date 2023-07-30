@@ -16,6 +16,11 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
+    <!-- hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -28,6 +33,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
 </head>
 
@@ -166,6 +173,64 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+
+                                <button type="button" class="btn btn-primary btn btn-danger hvr-icon-forward w-100"
+                                    data-bs-toggle="modal" data-bs-target="#callUsModal">Book
+                                    An Appointment
+                                    <i class="fa fa-angle-right hvr-icon"></i>
+                                </button>
+
+                                <div class="modal fade" id="callUsModal" tabindex="-1"
+                                    aria-labelledby="callUsModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="callUsModalLabel">Book A Free
+                                                    Appointment</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="full_name">Full Name</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="tel" class="form-control" id="floatingInput"
+                                                            placeholder="Enter your phone number">
+                                                        <label for="floatingInput">Phone number</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <textarea class="form-control"
+                                                            placeholder="Leave a comment here" id="floatingTextarea2"
+                                                            style="height: 100px"></textarea>
+                                                        <label for="floatingTextarea2">Describe your project</label>
+                                                    </div>
+                                                    <button class="w-100 btn btn-lg btn-primary"
+                                                        type="submit">Send</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a href="tel:910000000000" class="btn btn-outline-warning hvr-icon-forward w-100">
+                                    <i class="fa-solid fa-phone hvr-icon"></i>
+                                    Call Us
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-5">
                         <form
@@ -526,8 +591,6 @@
     </div>
     <!-- Services: start -->
 
-
-
     <!-- portfolio: start -->
     <section class="bg-warning py-5">
         <div class="container">
@@ -736,6 +799,68 @@
     </section>
     <!-- portfolio: end -->
 
+
+    <!-- NIECHES: start -->
+    <div class="py-5 bg-dark">
+        <div class="container">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Home</button>
+                    <button class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">Profile</button>
+                    <button class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">Messages</button>
+                    <button class="nav-link mb-2" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false">Settings</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="text-center">
+                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                            <p class="text-light">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <div class="text-center">
+                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                            <p class="text-light">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <div class="text-center">
+                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                            <p class="text-light">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <div class="text-center">
+                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                            <p class="text-light">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NIECHES: end -->
+
     <!-- technologies: start -->
     <section class="py-5">
         <div class="container">
@@ -781,7 +906,7 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="card p-3 mx-1 text-center">
+                                <div class="card w-75 p-3 mx-auto text-center">
                                     <h3>Lorem Ipsum</h3>
                                     <p>
                                         <em>
