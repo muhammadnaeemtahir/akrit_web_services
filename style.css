@@ -404,12 +404,19 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-collapse{
     background-color: var(--scrollbar-bg-color);
     border: 1px solid var(--warning-color);
     border-radius: 8px;
   }
+}
+@media (max-width: 768px) {
+  /* .navbar-collapse{
+    background-color: var(--scrollbar-bg-color);
+    border: 1px solid var(--warning-color);
+    border-radius: 8px;
+  } */
   
   .exp-badge{
     left: 1rem;
