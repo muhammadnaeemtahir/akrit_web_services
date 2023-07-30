@@ -1,7 +1,20 @@
 "use strict";
 
-const splideItems = document.querySelectorAll(".splide");
+// apply changes to the navbar when the user scrolls the page
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  const threshold = 0;
 
+  if (window.scrollY > threshold) {
+    navbar.classList.add("bg-dark");
+    navbar.classList.remove("bg-transparent");
+  } else {
+    navbar.classList.add("bg-transparent");
+    navbar.classList.remove("bg-white");
+  }
+});
+
+const splideItems = document.querySelectorAll(".splide");
 // testimonials initialization
 document.addEventListener("DOMContentLoaded", function () {
   function updateSplidePerPage() {
@@ -27,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", updateSplidePerPage);
 });
 
+// technologies initialization
 document.addEventListener("DOMContentLoaded", function () {
   function updateSplidePerPage() {
     let splideOptions = {
@@ -51,3 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateSplidePerPage();
   window.addEventListener("resize", updateSplidePerPage);
 });
+
+// fancybox initialization
+Fancybox.bind("[data-fancybox]", {});

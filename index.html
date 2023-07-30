@@ -45,7 +45,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars text-white"></i>
                 </button>
-                <div class="collapse navbar-collapse p-md-0 p-3" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse p-md-0 p-3 mt-md-0 mt-3" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -68,38 +68,25 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="ms-auto" role="search">
-                        <a href="" class="text-decoration-none mx-2 d-md-inline d-none">
-                            <i class="fa-brands fa-facebook fs-2 text-white"></i>
-                        </a>
-                        <a href="" class="text-decoration-none mx-2 d-md-inline d-none">
-                            <i class="fa-brands fa-instagram fs-2 text-white"></i>
-                        </a>
-                        <a href="" class="text-decoration-none mx-2 d-md-inline d-none">
-                            <i class="fa-brands fa-skype fs-2 text-white"></i>
-                        </a>
-                        <a href="" class="text-decoration-none mx-2 d-md-inline d-none">
-                            <i class="fa-brands fa-whatsapp fs-2 text-white"></i>
-                        </a>
-                        <button class="btn btn-warning ms-md-5 mb-3" id="action-btn" type="submit">Call to
-                            action</button>
-                        <div class="d-md-none d-block">
-                            <div class="d-flex justify-content-evenly">
-                                <a href="" class="text-decoration-none mx-2">
-                                    <i class="fa-brands fa-facebook fs-2 text-white"></i>
-                                </a>
-                                <a href="" class="text-decoration-none mx-2">
-                                    <i class="fa-brands fa-instagram fs-2 text-white"></i>
-                                </a>
-                                <a href="" class="text-decoration-none mx-2">
-                                    <i class="fa-brands fa-skype fs-2 text-white"></i>
-                                </a>
-                                <a href="" class="text-decoration-none mx-2">
-                                    <i class="fa-brands fa-whatsapp fs-2 text-white"></i>
-                                </a>
-                            </div>
+                    <div
+                        class="ms-auto d-flex flex-md-row flex-column-reverse justify-content-between align-items-center">
+                        <div class="social-icons d-flex gap-3">
+                            <a href="" class="text-decoration-none">
+                                <i class="fa-brands fa-facebook fs-2 text-white"></i>
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <i class="fa-brands fa-instagram fs-2 text-white"></i>
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <i class="fa-brands fa-skype fs-2 text-white"></i>
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <i class="fa-brands fa-whatsapp fs-2 text-white"></i>
+                            </a>
                         </div>
-                    </form>
+                        <button class="btn btn-warning ms-md-5 mb-3 w-100" id="action-btn" type="submit">Call to
+                            action</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -759,17 +746,23 @@
                         </li>
                         <li class="splide__slide">
                             <div class="text-center">
-                                <img src="./assets/icons/js.png" class="img-fluid technology_icon" alt="css">
+                                <img src="./assets/icons/js.png" class="img-fluid technology_icon" alt="js">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="text-center">
-                                <img src="./assets/icons/wordpress.jpeg" class="img-fluid technology_icon" alt="css">
+                                <img src="./assets/icons/wordpress.jpeg" class="img-fluid technology_icon"
+                                    alt="wordpress">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="text-center">
-                                <img src="./assets/icons/php.png" class="img-fluid technology_icon" alt="css">
+                                <img src="./assets/icons/php.png" class="img-fluid technology_icon" alt="php">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="text-center">
+                                <img src="./assets/icons/laravel.png" class="img-fluid technology_icon" alt="laravel">
                             </div>
                         </li>
                     </ul>
@@ -1105,27 +1098,6 @@
 
     <!-- custom script -->
     <script src="./js/main.js"></script>
-
-    <script>
-        // apply changes to the navbar when the user scrolls the page
-        window.addEventListener("scroll", function () {
-            const navbar = document.querySelector(".navbar");
-            const threshold = 0;
-
-            if (window.scrollY > threshold) {
-                navbar.classList.add("bg-dark");
-                navbar.classList.remove("bg-transparent");
-            } else {
-                navbar.classList.add("bg-transparent");
-                navbar.classList.remove("bg-white");
-            }
-        });
-    </script>
-
-    <script>
-        // fancybox initialization
-        Fancybox.bind("[data-fancybox]", {});
-    </script>
 
 </body>
 
