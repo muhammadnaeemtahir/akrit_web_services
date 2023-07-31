@@ -55,10 +55,10 @@
                 <div class="collapse navbar-collapse p-lg-0 p-3 mt-3" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -73,9 +73,6 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
                     <div class="d-flex flex-md-row flex-column-reverse justify-content-between ms-auto">
@@ -272,30 +269,30 @@
                             <div class="position-absolute top-0 translate-middle exp-badge">
                                 <img src="./assets/icons/Badge.png" class="img-fluid w-50" alt="">
                             </div>
-                            <h4 class="text-center text-white">Get 30X more Sales With US!</h1>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="full_name">Full Name</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="floatingInput"
-                                        placeholder="Enter your phone number">
-                                    <label for="floatingInput">Phone number</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                        id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">Describe your project</label>
-                                </div>
-                                <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
-                                <hr class="my-4">
-                                <small class="text-light">Lorem ipsum dolor sit amet consectetur</small>
+                            <h4 class="text-center text-white">Get 30X more Sales With US!</h4>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="full_name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="floatingInput"
+                                    placeholder="Enter your phone number">
+                                <label for="floatingInput">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Describe your project</label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
+                            <hr class="my-4">
+                            <small class="text-light">Lorem ipsum dolor sit amet consectetur</small>
                         </form>
                     </div>
                 </div>
@@ -849,56 +846,69 @@
     <div class="py-5 bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
-                        <button class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="true">Home</button>
-                        <button class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="false">Profile</button>
-                        <button class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                            aria-selected="false">Messages</button>
-                        <button class="nav-link mb-2" id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                            aria-selected="false">Settings</button>
+                        <button class="nav-link mb-2 hvr-icon-back active" id="v-pills-healthcare-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-healthcare" type="button" role="tab"
+                            aria-controls="v-pills-healthcare" aria-selected="true">
+                            <i class="fa-solid fa-suitcase-medical fs-3 hvr-icon"></i>
+                            Healthcare</button>
+                        <button class="nav-link mb-2 hvr-icon-back" id="v-pills-tourism-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-tourism" type="button" role="tab" aria-controls="v-pills-tourism"
+                            aria-selected="false">
+                            <i class="fa-solid fa-car fs-3 hvr-icon"></i>
+                            Travel & Tourism</button>
+                        <button class="nav-link mb-2 hvr-icon-back" id="v-pills-Banking-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Banking" type="button" role="tab" aria-controls="v-pills-Banking"
+                            aria-selected="false">
+                            <i class="fa-solid fa-building-columns fs-3 hvr-icon"></i>
+                            Banking & Finance</button>
+                        <button class="nav-link mb-2 hvr-icon-back" id="v-pills-transport-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-transport" type="button" role="tab"
+                            aria-controls="v-pills-transport" aria-selected="false">
+                            <i class="fa-solid fa-truck-fast fs-3 hvr-icon"></i>
+                            Logistics and Transport
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-8">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="v-pills-healthcare" role="tabpanel"
+                            aria-labelledby="v-pills-healthcare-tab" tabindex="0">
                             <div class="text-center">
-                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <h1 class="text-white">Lorem ipsum dolor sit amet.</h1>
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-100" alt="">
                                 <p class="text-light">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
                                 </p>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <div class="tab-pane fade" id="v-pills-tourism" role="tabpanel"
+                            aria-labelledby="v-pills-tourism-tab" tabindex="0">
                             <div class="text-center">
-                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <h1 class="text-white">Lorem ipsum dolor sit amet.</h1>
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-100" alt="">
                                 <p class="text-light">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
                                 </p>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <div class="tab-pane fade" id="v-pills-Banking" role="tabpanel"
+                            aria-labelledby="v-pills-Banking-tab" tabindex="0">
                             <div class="text-center">
-                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <h1 class="text-white">Lorem ipsum dolor sit amet.</h1>
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-100" alt="">
                                 <p class="text-light">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
                                 </p>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <div class="tab-pane fade" id="v-pills-transport" role="tabpanel"
+                            aria-labelledby="v-pills-transport-tab" tabindex="0">
                             <div class="text-center">
-                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <h1 class="text-white">Lorem ipsum dolor sit amet.</h1>
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-100" alt="">
                                 <p class="text-light">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
                                 </p>
@@ -907,60 +917,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Home</button>
-                    <button class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Profile</button>
-                    <button class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">Messages</button>
-                    <button class="nav-link mb-2" id="v-pills-settings-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-                        aria-selected="false">Settings</button>
-                </div>
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab" tabindex="0">
-                        <div class="text-center">
-                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
-                            <p class="text-light">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab" tabindex="0">
-                        <div class="text-center">
-                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
-                            <p class="text-light">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab" tabindex="0">
-                        <div class="text-center">
-                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
-                            <p class="text-light">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab" tabindex="0">
-                        <div class="text-center">
-                            <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
-                            <p class="text-light">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <!-- NIECHES: end -->
@@ -1244,6 +1200,75 @@
     </section>
     <!-- timeline: end -->
 
+    <!-- contact: start -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row py-lg-5 p-3">
+                <div class="col-lg-6 mb-3">
+                    <div>
+                        <h1 class="fw-bold mb-3">
+                            Lorem, ipsum dolor sit amet consectetur
+                        </h1>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="full_name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="floatingInput"
+                                    placeholder="Enter your phone number">
+                                <label for="floatingInput">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Describe your project</label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-warning" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="mb-5">
+                        <h1 class="display-2 fw-bold mb-3">
+                            Contact Us.
+                        </h1>
+                        <p class="">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus officiis et soluta
+                            quam accusamus veritatis voluptatum cupiditate quis asperiores odio doloremque aperiam
+                            dolores, error similique temporibus.
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="display-2 fw-bold mb-3">
+                            Location.
+                        </h1>
+                        <ul class="list-group" type="none">
+                            <li class="list-item">
+                                Office A 557 – B Moti Nagar West, Habib Marg, Vaishali Nagar,
+                                Jaipur 302021, Rajasthan, India
+                            </li>
+                            <li class="list-item">
+                                Phone: <a href="tel:" class="text-decoration-none">+910000000000</a>
+                            </li>
+                            <li class="list-item">
+                                Email: <a href="mailto:" class="text-decoration-none">name@email.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- contact: end -->
+
 
     <!-- footer: start -->
     <footer class="bg-dark">
@@ -1325,27 +1350,6 @@
 
     <!-- custom script -->
     <script src="./js/main.js"></script>
-
-    <script>
-        // apply changes to the navbar when the user scrolls the page
-        window.addEventListener("scroll", function () {
-            const navbar = document.querySelector(".navbar");
-            const threshold = 0;
-
-            if (window.scrollY > threshold) {
-                navbar.classList.add("bg-dark");
-                navbar.classList.remove("bg-transparent");
-            } else {
-                navbar.classList.add("bg-transparent");
-                navbar.classList.remove("bg-white");
-            }
-        });
-    </script>
-
-    <script>
-        // fancybox initialization
-        Fancybox.bind("[data-fancybox]", {});
-    </script>
 
 </body>
 
