@@ -29,6 +29,11 @@ body {
 
 /* presets: end */
 
+.exp-badge{
+  left: 20%;
+}
+
+
 .hero-wrapper {
   background-image: url("./assets/images/hero-bg.jpg");
   background-size: cover;
@@ -393,10 +398,24 @@ body {
 }
 /* FAQs: end */
 
-
-.exp-badge{
-  left: 20%;
+/* FORM: start */
+.form-control:is(:focus){
+  box-shadow: unset;
 }
+
+@keyframes floating {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+.floating-img {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* FORM: end */
+
+
 
 
 /* media quiries */
@@ -429,5 +448,11 @@ body {
     max-width: 6rem !important;
     width: 100% !important;
     height: auto;
+  }
+
+  .nav-pills{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: unset !important;
   }
 }

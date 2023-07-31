@@ -184,40 +184,74 @@
 
                                 <div class="modal fade" id="callUsModal" tabindex="-1"
                                     aria-labelledby="callUsModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="callUsModalLabel">Book A Free
-                                                    Appointment</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content p-lg-3 bg-dark text-light">
+                                            <div class="modal-header border-0">
+                                                <p>LETS BUILD SOMETHING GREAT TOGETHER!</p>
+                                                <button type="button" class="btn btn-danger rounded-circle"
+                                                    data-bs-dismiss="modal" aria-label="Close"><i
+                                                        class="fa-solid fa-x"></i></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form class="">
-                                                    <div class="form-floating mb-3">
-                                                        <input type="text" class="form-control" id="floatingInput"
-                                                            placeholder="name@example.com">
-                                                        <label for="full_name">Full Name</label>
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6">
+                                                        <h3 class="text-center fw-bold" id="callUsModalLabel">GET
+                                                            STARTED
+                                                            NOW!</h3>
+                                                        <form>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="input-group mb-3">
+                                                                        <span class="input-group-text border-0"><i
+                                                                                class="fa-solid fa-user text-danger"></i></span>
+                                                                        <input type="text"
+                                                                            class="form-control p-3 border-0"
+                                                                            placeholder="Enter full name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="input-group mb-3">
+                                                                        <span class="input-group-text border-0"><i
+                                                                                class="fa-solid fa-envelope text-danger"></i></span>
+                                                                        <input type="email"
+                                                                            class="form-control p-3 border-0"
+                                                                            placeholder="name@email.com">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="input-group mb-3">
+                                                                        <span class="input-group-text border-0"><i
+                                                                                class="fa-solid fa-phone text-danger"></i></span>
+                                                                        <input type="tel"
+                                                                            class="form-control p-3 border-0"
+                                                                            placeholder="Enter phone number">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="input-group mb-3">
+                                                                        <span class="input-group-text"><i
+                                                                                class="fa-solid fa-message text-danger"></i></span>
+                                                                        <textarea class="form-control border-0"
+                                                                            placeholder="Describe your project"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <button type="button"
+                                                                        class="btn btn-warning hvr-icon-forward w-100 fw-bold p-3">
+                                                                        SUBMIT YOUR QUERY
+                                                                        <i class="fa-solid fa-share hvr-icon"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                    <div class="form-floating mb-3">
-                                                        <input type="email" class="form-control" id="floatingInput"
-                                                            placeholder="name@example.com">
-                                                        <label for="floatingInput">Email address</label>
+                                                    <div class="col-lg-6">
+                                                        <div class="d-md-block d-none">
+                                                            <img src="./assets/images/expertise-img.png"
+                                                                class="img-fluid floating-img" alt="">
+                                                        </div>
                                                     </div>
-                                                    <div class="form-floating mb-3">
-                                                        <input type="tel" class="form-control" id="floatingInput"
-                                                            placeholder="Enter your phone number">
-                                                        <label for="floatingInput">Phone number</label>
-                                                    </div>
-                                                    <div class="form-floating mb-3">
-                                                        <textarea class="form-control"
-                                                            placeholder="Leave a comment here" id="floatingTextarea2"
-                                                            style="height: 100px"></textarea>
-                                                        <label for="floatingTextarea2">Describe your project</label>
-                                                    </div>
-                                                    <button class="w-100 btn btn-lg btn-primary"
-                                                        type="submit">Send</button>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -599,19 +633,30 @@
             <p class="text-center">Immerse yourself in a world where web design transcends boundaries,
                 leaving onlookers spellbound and craving for more.
             </p>
-            <ul class="nav nav-pills d-flex justify-content-center mt-5 mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills d-flex justify-content-center mt-5 mb-3 pb-md-0 pb-3" id="pills-tab"
+                role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link mx-1 active" id="website-design-tab" data-bs-toggle="pill"
+                    <button class="nav-link text-nowrap mx-1 active" id="website-design-tab" data-bs-toggle="pill"
                         data-bs-target="#website-design" type="button" role="tab" aria-controls="website-design"
                         aria-selected="true">Website Design</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link mx-1" id="pills-profile-tab" data-bs-toggle="pill"
+                    <button class="nav-link text-nowrap mx-1" id="pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                         aria-selected="false">Profile</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link mx-1" id="pills-contact-tab" data-bs-toggle="pill"
+                    <button class="nav-link text-nowrap mx-1" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Contact</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-nowrap mx-1" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Contact</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-nowrap mx-1" id="pills-contact-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
                         aria-selected="false">Contact</button>
                 </li>
@@ -803,7 +848,66 @@
     <!-- NIECHES: start -->
     <div class="py-5 bg-dark">
         <div class="container">
-            <div class="d-flex align-items-start">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Home</button>
+                        <button class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Profile</button>
+                        <button class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">Messages</button>
+                        <button class="nav-link mb-2" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">Settings</button>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="text-center">
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <p class="text-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="text-center">
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <p class="text-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="text-center">
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <p class="text-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <div class="text-center">
+                                <img src="./assets/images/expertise-img.png" class="img-fluid w-50" alt="">
+                                <p class="text-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, ad?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="d-flex align-items-start">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
@@ -856,7 +960,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- NIECHES: end -->
@@ -906,7 +1010,7 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="card p-3 mx-auto text-center">
+                                <div class="card p-3 mx-3 text-center">
                                     <h3>Lorem Ipsum</h3>
                                     <p>
                                         <em>
